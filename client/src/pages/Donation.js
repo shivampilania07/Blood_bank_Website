@@ -28,6 +28,7 @@ const Donation = () => {
     }
   };
 
+  // eslint-disable-next-line
   useEffect(() => {
     getDonars();
   }, [user?._id]);

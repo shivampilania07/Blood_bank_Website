@@ -24,9 +24,10 @@ const Consumer = () => {
     } catch (error) {}
   };
 
+  // eslint-disable-next-line
   useEffect(() => {
     getDonars();
-  }, []);
+  }, [getDonars]);
 
   return (
     <Layout>
