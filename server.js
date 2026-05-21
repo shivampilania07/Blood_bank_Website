@@ -6,7 +6,7 @@ const colors = require("colors");
 const morgan = require("morgan");
 const cors = require("cors");
 const connectDB = require("./config/db");
-const path = require("/path");
+const path = require("path");
 
 //dot config
 dotenv.config();
