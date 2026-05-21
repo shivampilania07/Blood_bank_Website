@@ -37,13 +37,14 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-//port
-const PORT = process.env.PORT || 8080;
+module.exports = app;
+// //port
+// const PORT = process.env.PORT || 8080;
 
-//listen
-app.listen(PORT, () => {
-  console.log(
-    `Node Server Running IN ${process.env.DEV_MODE} Mode on PORT ${process.env.PORT}`
-      .bgBlue.white,
-  );
-});
+// //listen
+// app.listen(PORT, () => {
+//   console.log(
+//     `Node Server Running IN ${process.env.DEV_MODE} Mode on PORT ${process.env.PORT}`
+//       .bgBlue.white,
+//   );
+// });
