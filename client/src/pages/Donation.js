@@ -29,10 +29,8 @@ const Donation = () => {
   };
 
   useEffect(() => {
-    if (user?._id) {
-      getDonars();
-    }
-  }, [getDonars]);
+    getDonars();
+  }, [user?._id]);
 
   return (
     <Layout>
