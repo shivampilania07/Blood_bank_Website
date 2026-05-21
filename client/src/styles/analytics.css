@@ -1,0 +1,104 @@
+.analytics-container {
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.analytics-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.analytics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.analytics-card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: 0.4s ease;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.analytics-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.blood-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px crimson;
+}
+
+.analytics-content {
+  margin-top: 25px;
+}
+
+.analytics-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.progress-bar.in {
+  background: #00ff88;
+}
+
+.progress-bar.out {
+  background: #ff4d4d;
+}
+
+.available-box {
+  margin-top: 25px;
+  padding: 15px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
