@@ -32,7 +32,7 @@ const Donation = () => {
     if (user?._id) {
       getDonars();
     }
-  }, [user?._id]);
+  }, [getDonars]);
 
   return (
     <Layout>

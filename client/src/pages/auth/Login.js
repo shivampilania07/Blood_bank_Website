@@ -2,7 +2,6 @@ import React from "react";
 import Form from "../../components/Shared/Form/Form";
 import { useSelector } from "react-redux";
 import Spinner from "../../components/Shared/Spinner";
-import { toast } from "react-toastify";
 
 const Login = () => {
   const { loading, error } = useSelector((state) => state.auth);
